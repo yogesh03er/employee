@@ -18,6 +18,10 @@ public class User {
 	
 	@Column(name="name")
 	private String name;
+	
+	@Column(name="fname")
+	private String fName;
+	
 
 	public Integer getId() {
 		return id;
@@ -33,6 +37,14 @@ public class User {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getFName() {
+		return fname;
+	}
+
+	public void setFName(String fname) {
+		this.fname = fname;
 	}
 	
 	
